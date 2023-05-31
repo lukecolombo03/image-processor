@@ -1,0 +1,30 @@
+A text README file explaining your design. Your README file should give the graders
+an overview of what the purposes are for every class, interface, etc. that you include
+in your submission, so that they can quickly get a high-level overview of your code.
+It does not replace the need for proper Javadoc!
+
+- we have a MVC architechture
+- our controller uses the command pattern. The UI has many buttons, each of which carry out a
+specific function that mutates the Frames and Panels in the view
+-commands has all our user-input commands, which are function objects that implement ICommand
+-controller has the IController and ControllerGUI implementation
+-model has our IModel interface and our model implementation.
+-our model has one field, which is a map of String to BufferedImage, representing each image stored
+in the program, and it’s “in-program” name
+-view has just the IView interface and the JFrame view interface
+-the JFrameView interface takes in just the name of the Frame, and initializes and stores the
+predetermined buttons and layouts.
+- through the buttons created in JFrameView the functions are activated and change the Frames
+and Panels
+- the histogram takes in an image and an int that determines if if it will be a red, green, or blue
+histogram
+- the GUIFeatures interface and its HandleFeatures implementation include all of the features of
+the assignment, and are called from the view
+
+- for assignment 6 we created a new Controller ControllerGUI, a new View JFrameView to
+store all of the graphical uses of the program, a new GUIFeatures interface for us to store
+all of the features of the program, and a Histogram class to represent a histogram
+- other than that, our high-level design was more or less the same
+
+- for assignment 8 level 2 we created a new Command object, MaskImage, and added that command object
+to knownCommands in Controllerv1, and added the maskImage() function in ImplModel

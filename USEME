@@ -1,0 +1,23 @@
+NOTE: In order to perform a command on an image, you have to open a file
+NOTE 2: In order to use a feature after loading an image, you must click on a button.
+
+All commands:
+vertical flip
+horizontal flip
+grayscale blue component
+grayscale green component
+grayscale red component
+grayscale intensity component
+grayscale luma component
+grayscale value component
+blur image
+sharpen image
+sepiaTone filter
+grayScale filter
+save current file
+quit
+
+
+
+
+
