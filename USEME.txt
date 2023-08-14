@@ -1,0 +1,59 @@
+How to use the program:
+
+* this program supports PPM, JPEG, PNG, and BMP image formats
+
+* if any of the commands are not valid, the program will ignore the command and
+  reads the next command
+* 3 ways to use the program(instructions on how to run it with the provided .jar file):
+	* command-line arguments
+		* java -jar hw6.jar -txt
+	* using predefined script file
+		* java -jar hw6.jar -file -path of script-
+	* graphical user interface
+		* java -jar hw6.jar
+
+
+1. Command-line arguments
+Commands inside the program and with its parameters:
+
+load -reference name- —path of file-
+save -reference name- -path to save-
+horizontal-flip —file to flip-
+vertical-flip —file to flip-
+brighten —file to change- —brighten value-	# positive value to brighen / negative to darken   
+component —reference file- -modified file- -a component type-
+
+a component is one of the following strings:
+- red
+- green
+- blue
+- value
+- intensity
+- luma
+- blur
+- sharpen
+- sepia
+
+2. Script file
+
+- create a new file that contains the previous stated arguments into the new file
+- then execute the file with given instructions from above
+
+3. Graphical User Interface
+
+- upon entering the GUI
+- the left side of the Image Process program contains checkboxes and radioboxes where the
+  user can decide how to view the histogram and alter an image
+- before anything can be displayed, first load an image by clicking on the “load image” button
+- to edit an image, click on one of the edit options and then to complete the request click on the
+  “edit image” button
+- to save the image, click on the “save image” button and follow it by naming the file
+- there is an option to how to view the histogram of the image loaded/being edited
+  (by default the intensity is shown by the histogram)
+- multiple histogram components can be viewed at once by checking on the four boxes:
+  intensity, red, green, blue
+- the edit options for simplicity are: 
+  brighten, darken, horizontal-flip, vertical-flip, red-component, green-component, blue-component,
+  value, intensity, luma, blur, sharpen, sepia
+- the program is created to be simple and easy for the user as possible
+

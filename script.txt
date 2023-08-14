@@ -1,0 +1,57 @@
+load flower-ppm res/resPPM/flower.ppm
+save flower-ppm scriptOutput/flowerPPMcopy.ppm
+
+load flower-jpeg res/resJPEG/flower.jpeg
+save flower-jpeg scriptOutput/flowerJPEGcopy.jpeg
+
+load flower-png res/resPNG/flower.png
+save flower-png scriptOutput/flowerPNGcopy.png
+
+load flower-bmp res/resBMP/flower.bmp
+save flower-bmp scriptOutput/flowerBMPcopy.bmp
+
+component flower-jpeg flower-blur blur
+save flower-blur scriptOutput/flowerBLUR.jpeg
+
+component flower-jpeg flower-sharp sharpen
+save flower-sharp scriptOutput/flowerSHARP.jpeg
+
+component flower-jpeg flower-luma luma
+save flower-luma scriptOutput/flowerLUMA.jpeg
+
+component flower-jpeg flower-sepia sepia
+save flower-sepia scriptOutput/flowerSEPIA.jpeg
+
+component flower-jpeg flower-value value
+save flower-value scriptOutput/flowerVALUE.jpeg
+
+component flower-jpeg flower-intensity intensity
+save flower-intensity scriptOutput/flowerINTENSITY.jpeg
+
+component flower-jpeg flower-red red
+save flower-red scriptOutput/flowerRED.jpeg
+
+component flower-jpeg flower-green green
+save flower-green scriptOutput/flowerGREEN.jpeg
+
+component flower-jpeg flower-blue blue
+save flower-blue scriptOutput/flowerBLUE.jpeg
+
+load brightened-flower res/resPPM/flower.ppm
+load darkened-flower res/resPPM/flower.ppm
+load horizontal—flower res/resPPM/flower.ppm
+load vertical-flower res/resPPM/flower.ppm
+
+brighten brightened-flower +30
+save brightened-flower scriptOutput/flowerBRIGHTENED.ppm
+
+brighten brightened-flower -30
+save darkened-flower scriptOutput/flowerDARKENED.ppm
+
+horizontal-flip horizontal—flower
+save horizontal—flower scriptOutput/flowerHFLIP.ppm
+
+vertical-flip vertical-flower
+save vertical-flower scriptOutput/flowerVFLIP.ppm
+
+q

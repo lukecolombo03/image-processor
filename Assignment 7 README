@@ -1,0 +1,3 @@
+To implement Image Mosaicking, we created a new class Mosaic that implemented the ImageCommand
+interface. Next, we added the command to the actionPerformed() function in the SwingFrame class.
+Next, we added a button in the RadioButtons Panel to represent the Mosaicking option.
